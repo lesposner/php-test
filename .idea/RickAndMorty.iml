@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/asm89" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/brick" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/dnoegel" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/dragonmantank" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/egulias" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/fruitcake" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/fzaninotto" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/hamcrest" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/myclabs" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/nesbot" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/nikic" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/nunomaduro" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/opis" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/ralouphie" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/ramsey" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/scrivo" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/sebastian" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/symfony" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/theseer" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/tijsverkoyen" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/vlucas" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/voku" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/webmozart" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/laravel/vendor/phar-io/manifest/tests/_fixture/test.phar" />
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/laravel/composer.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/laravel/vendor/phar-io/manifest/tests/_fixture/test.phar" />
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/laravel/composer.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
