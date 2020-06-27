@@ -6,11 +6,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-    {{--<link href="/css/default.css" rel="stylesheet" />--}}
-    {{--<link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />--}}
     <link href="/css/app.css" rel="stylesheet" />
     <link href="/css/fonts.css" rel="stylesheet" />
-    {{--<link href="{{ mix('css/app.css') }}" rel="stylesheet" />--}}
 
     @yield('head')
 </head>
@@ -29,16 +26,10 @@
                 <a class="nav-link" href="/episode/1">Episodes</a>
             </li>
         </ul>
-        {{--<form class="form-inline my-2 my-lg-0">--}}
-            {{--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}
-            {{--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>--}}
-        {{--</form>--}}
 
         @include('partials.searchform')
     </div>
 </nav>
-
-
 
     @yield ('header')
 

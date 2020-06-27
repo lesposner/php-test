@@ -68,14 +68,11 @@ class ApiController extends Controller
     {
         $response = $this->api->episode($id);
         $episode = $response;
-
         return view('episode', compact('episode'));
     }
 
     public function search(Request $request)
     {
-//        dd(request()->all());
-
         $querystring = "";
         $characters = [];
         $locations = [];
@@ -84,24 +81,16 @@ class ApiController extends Controller
         // build a query string from the request
         $requeststring = http_build_query(request()->all());
 
-//        dd($requeststring);
-
         // remove the CSRF token and first '&' from the string
         $requeststring = substr($requeststring, strpos($requeststring, '&') + 1);
-
-//        dd($requeststring);
 
         if (!empty(request()->formName)) {
             // get the formname string from the end of the request string
             $formnamestring = substr($requeststring, strrpos($requeststring, '&'));
 
-//        dd($formnamestring);
-
             // chop the formname string off the end of the request string
             $requeststring = substr($requeststring, 0, -strlen($formnamestring));
         }
-
-//        dd($requeststring);
 
         if(request()->formName == 'character') {
             $querystring .= request()->formName.'/';
@@ -118,17 +107,13 @@ class ApiController extends Controller
             $querystring .= '?'.$requeststring;
         }
 
-
-//        dd($querystring);
         $response = $this->api->search($querystring);
-//        dd($response);
 
         if(request()->formName == 'character') {
             if(isset($response->results)) {
                 $characters = array_merge($characters, $response->results);
                 return view('allcharacters', ['characters' => $characters, 'info' => $response->info]);
             }
-//            dd($characters);
             return view('allcharacters', ['characters' => $characters]);
         }
 
